@@ -1,2 +1,2 @@
 # TwitchClipper
-Captures the best moment from the rizzler Kai Cenat. 
+Captures the best moment from our favourite twitch streamers.
