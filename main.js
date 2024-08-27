@@ -82,19 +82,15 @@ setInterval(() => {
     console.log(`Average message rate: ${avgRate.toFixed(2)}`);
 
     // Check if the current message rate exceeds the average by 20
-    if (messageCount > avgRate + 20 && !clipTriggered) {
+    if (messageCount > avgRate + 20) {
         console.log("Message rate exceeds average by 20, triggering clip...");
-        clipTriggered = true;
 
         // Trigger the clip creation
         createClip();
 
         // Reset clipTriggered after some time or based on other criteria
-        setTimeout(() => {
-            clipTriggered = false;
-        }, interval);
+        setTimeout(() => {}, 20000);
     }
-
     // Reset the message count after logging
     messageCount = 0;
 }, interval);
